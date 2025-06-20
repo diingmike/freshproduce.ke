@@ -267,6 +267,26 @@
 	}
 /* about us ends */
 
+/* certification & industry membership */
+	.cert
+	{
+		padding: 50px;
+	}
+
+	.cert-container
+	{
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		align-items: center;
+		grid-gap: 30px;
+	}
+
+	.cert-container img
+	{
+		border-radius: 13px;
+	}
+/* certification & industry membership ends */
+
 /* footer */
 	.footer-cover
 	{
@@ -328,6 +348,209 @@
 /* page responsiveness */
 	@media screen and (max-width: 768px)
 	{
-		
+		/* header */
+			.checkbtn
+			{
+				display: block;
+				order: 1;
+				margin-right: 10px;
+			}
+
+			.checkbtn i
+			{
+				font-size: 30px;
+			}
+
+			header ul
+			{
+				position: fixed;
+				top: 120px;
+				right: -100%;
+				background-color: #20bf6b;
+				width: 20%;
+				height: 50vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				transition: all 0.3s;
+			}
+
+			header ul li
+			{
+				margin: 20px 0;
+			}
+
+			header ul li a
+			{
+				font-size: 13px;
+				color: white;
+			}
+
+			#check:checked ~ ul
+			{
+				right: 0;
+			}
+		/* header ends */
+
+		/* services */
+			.service-container
+			{
+				grid-gap: 20px;
+			}
+
+			.service-box img
+			{
+				width: 150px;
+				height: 150px;
+			}
+		/* services end */
+
+		/* featured products */
+			.product-container
+			{
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: 20px;
+			}
+		/* featured products end */
+	}
+
+	@media screen and (max-width: 425px)
+	{
+		/* header */
+			.checkbtn i
+			{
+				font-size: 25px;
+			}
+
+			header .logo a
+			{
+				font-size: 1rem;
+				font-weight: 800;
+			}
+
+			header ul
+			{
+				width: 40%;
+			}
+		/* header ends */
+
+		/* banner */
+			.banner-content h1
+			{
+				font-size: 3rem;
+			}
+
+			.banner-content h1 a
+			{
+				font-size: 3rem;
+			}
+		/* banner ends */
+
+		/* services */
+			.services
+			{
+				margin-top: 20px;
+				padding: 20px;
+			}
+
+			.service-container
+			{
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 20px;
+			}
+		/* services end */
+
+		/* featured products */
+			.featured
+			{
+				padding: 20px;
+			}
+
+			.product-container
+			{
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 20px;
+			}
+
+			.product-box img
+			{
+				height: 200px;
+			}
+		/* featured products end */
+
+		/* cert */
+			.cert
+			{
+				padding: 20px;
+			}
+
+			.cert-container
+			{
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 20px;
+			}
+		/* cert ends */
+
+		/* footer */
+			.footer-cover
+			{
+				padding: 20px;
+			}
+
+			.footer-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 20px;
+			}
+		/* footer ends */
+
+		/* about us */
+			.about
+			{
+				padding: 20px;
+			}
+
+			.about p
+			{
+				padding: 0 20px;
+			}
+		/* about us ends */
+	}
+
+	@media screen and (max-width: 320px)
+	{
+		/* services */
+			.services
+			{
+				margin-top: 10px;
+				padding: 10px;
+			}
+
+			.service-container
+			{
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 10px;
+			}
+		/* services end */
+
+		/* featured products */
+			.featured
+			{
+				padding: 10px;
+			}
+
+			.product-container
+			{
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 10px;
+			}
+
+			.product-box img
+			{
+				height: 200px;
+			}
+		/* featured products end */
 	}
 /* page responsiveness ends */
