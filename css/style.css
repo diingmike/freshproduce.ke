@@ -434,6 +434,11 @@
 				font-size: 25px;
 			}
 
+			header .logo
+			{
+				height: 70px;
+			}
+		
 			header .logo a
 			{
 				font-size: 1rem;
@@ -531,6 +536,13 @@
 
 	@media screen and (max-width: 320px)
 	{
+		/* header */
+			header .logo
+			{
+				height: 70px;
+			}
+		/* header ends */
+		
 		/* services */
 			.services
 			{
