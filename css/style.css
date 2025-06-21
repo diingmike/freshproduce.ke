@@ -34,6 +34,16 @@
 
 	header .logo
 	{
+		height: 100px;
+	}
+
+	header .logo img
+	{
+		height: 100%;
+	}
+
+	header .logo
+	{
 		padding: 10px;
 	}
 
