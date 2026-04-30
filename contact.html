@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> Fresh Produce Exporters KE LTD </title>
+
+        <meta charset = "UTF-8" />
+        <meta name = "author" content = "Michael Chan" /> <!--date of creation; Mon, June 9, 2025-->
+        <meta name = "viewport" content = "width=device-width,initial-scale=1,shrink-to-fit=no" />
+
+        <!--custom css-->
+        <link rel = "stylesheet" href = "css/style.css" />
+
+        <!--font awesome link-->
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+        <!-- Google Fonts: Oswald (display) + Nunito Sans (body) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!--header-->
+        <div class = "header-cover" id = "header-cover">
+            <!--top info bar-->
+            <div class = "top-bar">
+                <div class = "top-bar-inner">
+                    <div class = "top-bar-contacts">
+                        <span> <i class = "fas fa-phone-alt"></i> +254 700 000 000 </span>
+                        <span> <i class = "fas fa-envelope"></i> info@freshproduceke.com </span>
+                        <span class = "top-bar-location"> <i class = "fas fa-map-marker-alt"></i> Nairobi, Kenya </span>
+                    </div>
+
+                    <div class = "top-bar-right">
+                        <span class = "top-bar-tagline"> Premium Exports. Farm Fresh. </span>
+                        <div class = "top-bar-social">
+                            <a href = "#" aria-label = "Facebook"> <i class = "fab fa-facebook-f"></i> </a>
+                            <a href = "#" aria-label = "Instagram"> <i class = "fab fa-instagram"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--main header-->
+            <div class = "header-main">
+                <div class = "container header-main-inner">
+                    <!--logo-->
+                    <a class = "logo" href = "index.html" aria-label = "Fresh Produce Exporters KE — Home">
+                        <img src = "images/logo.png" alt = "Fresh Produce Exporters KE Logo" class = "logo-img" />
+                        <span class = "logo-badge"> Exporters KE Ltd </span>
+                    </a>
+
+                    <!--desktop navigation-->
+                    <nav class = "nav" aria-label = "Main navigation">
+                        <ul class = "nav-list">
+                            <li class = "nav-item nav-item--active">
+                                <a href = "index.html"> Home </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a href = "products.html"> Products </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a href = "about.html"> About Us </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a href = "contact.html"> Contact </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Header Actions -->
+                    <div class = "header-actions">
+                        <a class = "btn-cta" href = "contact.html">
+                            <span> Get a Quote </span>
+                            <i class = "fas fa-arrow-right"></i>
+                        </a>
+
+                        <!--hamburger-->
+                        <button class = "hamburger" 
+                                id = "hamburger" 
+                                aria-label = "Toggle navigation menu" 
+                                aria-expanded = "false" 
+                                aria-controls = "mobile-menu">
+                            <span class = "hamburger-bar"></span>
+                            <span class = "hamburger-bar"></span>
+                            <span class = "hamburger-bar"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <!--main header end-->
+
+            <!--tri-colour accent stripe-->
+            <div class = "header-stripe" aria-hidden = "true">
+                <span class = "stripe stripe--green"></span>
+                <span class = "stripe stripe--red"></span>
+                <span class = "stripe stripe--black"></span>
+            </div>
+
+            <!--mobile menu-->
+            <div class = "mobile-menu" id = "mobile-menu" aria-hidden = "true">
+                <nav aria-label = "Mobile navigation">
+                    <ul class = "mobile-menu-list">
+                        <li> 
+                            <a href = "index.html"> <i class = "fas fa-home"></i> <span> Home </span> </a>
+                        </li>
+                        <li> 
+                            <a href = "products.html"> <i class = "fas fa-seedling"></i> <span> Products </span> </a>
+                        </li>
+                        <li> 
+                            <a href = "about.html"> <i class = "fas fa-info-circle"></i> <span> About Us </span> </a>
+                        </li>
+                        <li> 
+                            <a href = "contact.html"> <i class = "fas fa-envelope"></i> <span> Contact </span> </a> 
+                        </li>
+                    </ul>
+
+                    <a class = "btn-cta btn-cta--mobile" href = "contact.html">
+                        <span> Get a Quote </span>
+                        <i class = "fas fa-arrow-right"></i>
+                    </a>
+
+                    <div class = "mobile-menu-contacts">
+                        <span> <i class = "fas fa-phone-alt"></i> +254 700 000 000 </span>
+                        <span> <i class = "fas fa-envelope"></i> info@freshproduceke.com </span>
+                    </div>
+                </nav>
+            </div>
+            <!--mobile menu end-->
+
+        </div>
+        <!--header end-->
+
+        <!--dynamic spacer — height set by JS to match actual header height-->
+        <div class = "header-spacer" id = "header-spacer"></div>
+
+        <!--contact-->
+        <section class = "contact">
+            <div class="container">
+
+                <!--section header-->
+                <div class = "section-header">
+                    <div class = "section-label"> Get In Touch </div>
+                    <h1 class = "section-title"> Contact <em> Us </em> </h1>
+                    <p class = "section-sub"> Reach out to us for enquiries, quotes or partnerships. We respond within 24 hours. </p>
+                </div>
+
+                <!--two-column layout-->
+                <div class = "contact-layout">
+
+                    <!--left: contact info cards-->
+                    <div class="contact-info">
+
+                        <div class = "contact-card">
+                            <div class = "contact-card-icon"> <i class = "fas fa-envelope"></i> </div>
+                            <div class = "contact-card-body">
+                                <div class = "contact-card-label"> Email Us </div>
+                                <div class = "contact-card-value">
+                                    <a href = "mailto:horticulture@freshproducekenya.com"> horticulture@freshproducekenya.com </a>
+                                    <a href = "mailto:avocado@freshproducekenya.com"> avocado@freshproducekenya.com </a>
+                                    <a href = "mailto:exports@freshproducekenya.com"> exports@freshproducekenya.com </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "contact-card">
+                            <div class = "contact-card-icon"> <i class = "fas fa-phone-alt"></i> </div>
+                            <div class = "contact-card-body">
+                                <div class = "contact-card-label"> Call Us </div>
+                                <div class = "contact-card-value">
+                                    <a href = "tel:+254700000000"> +254 700 000 000 </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "contact-card">
+                            <div class = "contact-card-icon"> <i class = "fas fa-map-marker-alt"></i> </div>
+                            <div class = "contact-card-body">
+                                <div class = "contact-card-label"> Find Us </div>
+                                <div class = "contact-card-value">
+                                    <span> Uchumi Building </span>
+                                    <span> Off General Kago Road </span>
+                                    <span> Thika, Kenya </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class= " contact-card">
+                            <div class = "contact-card-icon"> <i class = "fas fa-clock"></i> </div>
+                            <div class = "contact-card-body">
+                                <div class = "contact-card-label"> Working Hours </div>
+                                <div class = "contact-card-value">
+                                    <span> Mon – Fri: 8:00 AM – 5:00 PM </span>
+                                    <span> Sat: 9:00 AM – 1:00 PM </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--social links-->
+                        <div class = "contact-social">
+                            <a class = "social-btn" href = "#" aria-label = "Facebook"> <i class = "fab fa-facebook-f"></i> </a>
+                            <a class = "social-btn" href = "#" aria-label = "Instagram"> <i class = "fab fa-instagram"></i> </a>
+                            <a class = "social-btn" href = "#" aria-label = "LinkedIn"> <i class = "fab fa-linkedin-in"></i> </a>
+                            <a class = "social-btn" href = "#" aria-label = "Twitter"> <i class = "fab fa-twitter"></i> </a>
+                        </div>
+
+                    </div>
+                    <!--contact info end-->
+
+                    <!--right: contact form-->
+                    <div class="contact-form-wrap">
+                        <form class = "contact-form" id = "contactForm">
+
+                            <div class = "form-row">
+                                <div class = "form-group">
+                                    <label  class = "form-label" 
+                                            for = "fullName"> 
+                                            Full Name 
+                                            <span class = "form-required">*</span> 
+                                    </label>
+
+                                    <input  class = "form-input" 
+                                            type = "text" 
+                                            id = "fullName" 
+                                            name = "fullName" 
+                                            placeholder = "John Doe" 
+                                            required />
+                                </div>
+
+                                <div class = "form-group">
+                                    <label  class = "form-label" 
+                                            for = "email"> 
+                                            Email Address 
+                                            <span class = "form-required">*</span> 
+                                    </label>
+
+                                    <input  class = "form-input" 
+                                            type = "email" 
+                                            id = "email" 
+                                            name = "email" 
+                                            placeholder = "john@example.com" 
+                                            required />
+                                </div>
+                            </div>
+
+                            <div class = "form-row">
+                                <div class = "form-group">
+                                    <label  class = "form-label" 
+                                            for = "phone">
+                                            Phone Number
+                                    </label>
+
+                                    <input  class = "form-input" 
+                                            type = "tel" 
+                                            id = "phone" 
+                                            name = "phone" 
+                                            placeholder = "+254 700 000 000" />
+                                </div>
+
+                                <div class = "form-group">
+                                    <label  class = "form-label" 
+                                            for = "subject">
+                                            Subject 
+                                            <span class = "form-required">*</span>
+                                    </label>
+
+                                    <select class = "form-input form-select" id = "subject" name = "subject" required>
+                                        <option value = "" disabled selected> Select a subject </option>
+                                        <option value = "general"> General Enquiry </option>
+                                        <option value = "product"> Product Enquiry </option>
+                                        <option value = "quote"> Request a Quote </option>
+                                        <option value = "partnership"> Partnership </option>
+                                        <option value = "other"> Other </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class = "form-group">
+                                <label  class = "form-label" 
+                                        for = "message">
+                                        Message 
+                                        <span class = "form-required">*</span>
+                                </label>
+
+                                <textarea   class = "form-textarea" 
+                                            id = "message" 
+                                            name = "message" 
+                                            placeholder = "Tell us about your enquiry . . ." 
+                                            required></textarea>
+                            </div>
+
+                            <div class = "form-group">
+                                <button class = "btn-submit" type = "submit">
+                                    Send Message <i class = "fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                    <!--form end-->
+
+                </div>
+                <!--contact-layout end-->
+
+                <!--bottom tri-colour stripe-->
+                <div class = "section-stripe" aria-hidden = "true">
+                    <span class = "ss-g"></span>
+                    <span class = "ss-r"></span>
+                    <span class = "ss-b"></span>
+                </div>
+
+            </div>
+        </section>
+        <!--contact end-->
+
+        <!--footer-->
+        <section class = "footer-cover" id = "footer">
+
+            <!--top tri-colour stripe-->
+            <div class = "footer-stripe" aria-hidden = "true">
+                <span class = "fs-g"></span>
+                <span class = "fs-r"></span>
+                <span class = "fs-b"></span>
+            </div>
+
+            <div class = "container">
+
+                <!--brand row-->
+                <div class = "footer-brand">
+                    <a class = "footer-logo" href = "index.html" aria-label = "Fresh Produce Exporters KE Home">
+                        <img src="images/footer-logo.png" alt = "Fresh Produce Exporters KE Logo" />
+                    </a>
+                    <p class = "footer-tagline">
+                        Premium Exports &nbsp;&bull;&nbsp; Farm Fresh &nbsp;&bull;&nbsp; Nairobi, Kenya
+                    </p>
+                </div>
+
+                <!--three-column grid-->
+                <div class = "footer-grid">
+
+                    <!--contact-->
+                    <div class = "footer-col">
+                        <span class = "footer-col-title"> Contact Us </span>
+
+                        <div class = "footer-row">
+                            <div class = "footer-icon"> <i class = "fas fa-envelope"></i> </div>
+                            <div class = "footer-row-text">
+                                <a href = "mailto:horticulture@freshproducekenya.com"> horticulture@freshproducekenya.com </a>
+                            </div>
+                        </div>
+
+                        <div class = "footer-row">
+                            <div class = "footer-icon"> <i class = "fas fa-envelope"></i> </div>
+                            <div class = "footer-row-text">
+                                <a href = "mailto:avocado@freshproducekenya.com"> avocado@freshproducekenya.com </a>
+                            </div>
+                        </div>
+
+                        <div class = "footer-row">
+                            <div class = "footer-icon"> <i class = "fas fa-envelope"></i> </div>
+                            <div class = "footer-row-text">
+                                <a href = "mailto:exports@freshproducekenya.com"> exports@freshproducekenya.com </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--contact end-->
+
+                    <!--locate-->
+                    <div class = "footer-col">
+                        <span class = "footer-col-title"> Locate Us </span>
+
+                        <div class = "footer-row">
+                            <div class = "footer-icon"> <i class = "fas fa-map-marker-alt"></i> </div>
+                            <div class = "footer-row-text">
+                                <span> Uchumi Building </span>
+                                <span> Off General Kago Road </span>
+                                <span> Thika, Kenya </span>
+                            </div>
+                        </div>
+
+                        <div class = "footer-row">
+                            <div class = "footer-icon"> <i class = "fas fa-phone-alt"></i> </div>
+                            <div class = "footer-row-text">
+                                <a href = "tel:+254700000000"> +254 700 000 000 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--locate end-->
+
+                    <!--quick links-->
+                    <div class = "footer-col">
+                        <span class = "footer-col-title"> Quick Links </span>
+
+                        <ul class = "footer-links">
+                            <li> <a href = "index.html"> <i class = "fas fa-chevron-right"></i> Home </a> </li>
+                            <li> <a href = "products.html"> <i class = "fas fa-chevron-right"></i> Products </a> </li>
+                            <li> <a href = "about.html"> <i class = "fas fa-chevron-right"></i> About Us </a> </li>
+                            <li> <a href = "contact.html"> <i class = "fas fa-chevron-right"></i> Contact </a> </li>
+                        </ul>
+
+                        <div class = "footer-social">
+                            <a class = "social-btn" href = "#" aria-label = "Facebook"> <i class = "fab fa-facebook-f"></i> </a>
+                            <a class = "social-btn" href = "#" aria-label = "Instagram"> <i class = "fab fa-instagram"></i> </a>
+                        </div>
+                    </div>
+                    <!--quick links end-->
+
+                </div>
+                <!--footer-grid end-->
+
+                <!--bottom bar-->
+                <div class = "footer-bottom">
+                    <p class = "footer-copy">
+                        &copy; Fresh Produce Exporters Kenya LTD <span id = "year"></span>. All rights reserved.
+                    </p>
+
+                    <p class = "footer-copy">
+                        Designed with <span class = "footer-heart">&#10084;</span> in Nairobi
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!--back to top button-->
+        <a class = "back-to-top" href = "#" aria-label = "Back to top">
+            <i class = "fas fa-arrow-up"></i>
+        </a>
+        <!--footer end-->
+
+        <!--javascript-->
+        <script src = "js/script.js"></script>
+        <!--javascript end-->
+    </body>
+</html>

@@ -1,114 +1,397 @@
-<html lang = "en" dir = "ltr">
+<!DOCTYPE html>
+<html lang = "en">
 	<head>
 		<title> Fresh Produce Exporters KE LTD </title>
 
 		<meta charset = "UTF-8" />
 		<meta name = "author" content = "Michael Chan" /> <!--date of creation; Mon, June 9, 2025-->
-		<meta http-equiv = "X-UA-Compatible" content = "IE=edge" />
 		<meta name = "viewport" content = "width=device-width,initial-scale=1,shrink-to-fit=no" />
 
 		<!--custom css-->
 		<link rel = "stylesheet" href = "css/style.css" />
 
-		<!--nav responsiveness css-->
-		<link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<!--font awesome link-->
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
-		<!--tailwind for session messages-->
-		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
-		<!-- link to google font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
-
-		<!--bootstrap css-->
-		<link href ="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+		<!-- Google Fonts: Oswald (display) + Nunito Sans (body) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
 	</head>
 
-	<body style = "background-color: white; color: black;">
+	<body>
 		<!--header-->
-			<div class = "header-cover">
-				<div class = "container">
-					<header>
-						<input type = "checkbox" id = "check" />
-						<label for = "check" class = "checkbtn">
-							<i class = "fas fa-bars"></i>
-						</label>
+		<div class = "header-cover" id = "header-cover">
+			<!--top info bar-->
+			<div class = "top-bar">
+				<div class = "top-bar-inner">
+					<div class = "top-bar-contacts">
+          				<span> <i class = "fas fa-phone-alt"></i> +254 700 000 000 </span>
+          				<span> <i class = "fas fa-envelope"></i> info@freshproduceke.com </span>
+          				<span class = "top-bar-location"> <i class = "fas fa-map-marker-alt"></i> Nairobi, Kenya </span>
+        			</div>
 
-						<div class = "logo">
-							<a href = "index.html"> <img src = "images/logo.png" /> </a>
-						</div>
-
-						<ul>
-							<li> <a href = "index.html"> <b> Home </b> </a> </li>
-							<li> <a href = "about-us.html"> <b> About Us </b> </li>
-							<li> <a href = "products.html"> <b> Products </b> </a> </li>
-							<li> <a href = "index.html#footer"> <b> Contact </b> </a> </li>
-						</ul>
-					</header>
+        			<div class = "top-bar-right">
+          				<span class = "top-bar-tagline"> Premium Exports. Farm Fresh. </span>
+          				<div class = "top-bar-social">
+            				<a href = "#" aria-label = "Facebook"> <i class = "fab fa-facebook-f"></i> </a>
+            				<a href = "#" aria-label = "Instagram"> <i class = "fab fa-instagram"></i> </a>
+          				</div>
+        			</div>
 				</div>
 			</div>
-		<!--header ends-->
 
-		<!--banner-->
-			<div class = "banner" style = "background-image: url('images/banner-one.jpg');">
-				<div class = "container banner-content">
-					<h1> <a href = "index.html"> HOME </a> > OUR PRODUCTS </h1>
-				</div>
-			</div>
-		<!--banner ends-->
+			<!--main header-->
+			<div class = "header-main">
+      			<div class = "container header-main-inner">
+      				<!--logo-->
+			        <a class = "logo" href = "index.html" aria-label = "Fresh Produce Exporters KE — Home">
+			          	<img src = "images/logo.png" alt = "Fresh Produce Exporters KE Logo" class = "logo-img" />
+			          	<span class = "logo-badge"> Exporters KE Ltd </span>
+			        </a>
 
-		<!--products-->
-			<section class = "products">
-				<div class = "container">
-					<h1 class = "section-title"> Fresh Herbs </h1>
-					<h2 class = "section-sub-title"> We are growers, packers and exporters of fresh herbs </h2>
+			        <!--desktop navigation-->
+			        <nav class = "nav" aria-label = "Main navigation">
+			          	<ul class = "nav-list">
+				            <li class = "nav-item nav-item--active">
+				            	<a href = "index.html"> Home </a>
+				            </li>
+				            <li class = "nav-item">
+				            	<a href = "products.html"> Products </a>
+				            </li>
+				            <li class = "nav-item">
+				            	<a href = "about.html"> About Us </a>
+				            </li>
+				            <li class = "nav-item">
+				            	<a href = "contact.html"> Contact </a>
+				            </li>
+			          	</ul>
+			        </nav>
 
-					<div class = "product-page-container">
-						<div class = "product-page-box">
-							<div class = "product-page-box-img">
-								<img src = "images/herbs/basil-2.jpg" />
+			        <!-- Header Actions -->
+			        <div class = "header-actions">
+			          	<a class = "btn-cta" href = "contact.html">
+			            	<span> Get a Quote </span>
+			            	<i class = "fas fa-arrow-right"></i>
+			          	</a>
+
+			          	<!--hamburger-->
+			          	<button	class = "hamburger" 
+			          			id = "hamburger" 
+			          			aria-label = "Toggle navigation menu" 
+			          			aria-expanded = "false" 
+			          			aria-controls = "mobile-menu">
+			            	<span class = "hamburger-bar"></span>
+			            	<span class = "hamburger-bar"></span>
+			            	<span class = "hamburger-bar"></span>
+			          	</button>
+			        </div>
+
+      			</div>
+  			</div>
+  			<!--main header end-->
+
+  			<!--tri-colour accent stripe-->
+		    <div class = "header-stripe" aria-hidden = "true">
+		      	<span class = "stripe stripe--green"></span>
+		      	<span class = "stripe stripe--red"></span>
+		      	<span class = "stripe stripe--black"></span>
+		    </div>
+
+		    <!--mobile menu-->
+		    <div class = "mobile-menu" id = "mobile-menu" aria-hidden = "true">
+		      	<nav aria-label = "Mobile navigation">
+			        <ul class = "mobile-menu-list">
+			          	<li> 
+			          		<a href = "index.html"> <i class = "fas fa-home"></i> <span> Home </span> </a>
+			          	</li>
+			          	<li> 
+			          		<a href = "products.html"> <i class = "fas fa-seedling"></i> <span> Products </span> </a>
+			          	</li>
+			          	<li> 
+			          		<a href = "about.html"> <i class = "fas fa-info-circle"></i> <span> About Us </span> </a>
+			          	</li>
+			          	<li> 
+			          		<a href = "contact.html"> <i class = "fas fa-envelope"></i> <span> Contact </span> </a> 
+			          	</li>
+			        </ul>
+
+			        <a class = "btn-cta btn-cta--mobile" href = "contact.html">
+			          	<span> Get a Quote </span>
+			          	<i class = "fas fa-arrow-right"></i>
+			        </a>
+
+			        <div class = "mobile-menu-contacts">
+			          	<span> <i class = "fas fa-phone-alt"></i> +254 700 000 000 </span>
+			          	<span> <i class = "fas fa-envelope"></i> info@freshproduceke.com </span>
+			        </div>
+		      	</nav>
+		    </div>
+		    <!--mobile menu end-->
+
+		</div>
+		<!--header end-->
+
+		<!--dynamic spacer — height set by JS to match actual header height-->
+  		<div class = "header-spacer" id = "header-spacer"></div>
+
+		<!--products page-->
+		<section class = "products-page" id = "products">
+		  	<div class = "container">
+
+			    <!--section header-->
+			    <div class = "section-header">
+			      	<div class = "section-label"> Our full range </div>
+			      	<h2 class = "section-title"> All <em> Products </em> </h2>
+			      	<p class = "section-sub"> Growers, packers and exporters of premium Kenyan farm produce. </p>
+			    </div>
+
+			    <!--category: fruits-->
+			    <div class = "category-section" id = "fruits">
+			      	<div class = "category-header">
+				        <div class = "category-icon"> <i class = "fas fa-apple-alt"></i> </div>
+				        <h3 class = "category-title"> Fruits </h3>
+				        <div class = "category-divider"></div>
+			      	</div>
+
+			      	<div class = "category-grid">
+
+				        <div class = "product-card">
+				          	<div class = "product-card-img">
+				            	<img src = "https://i.ibb.co/spcH2D9k/pineapple.png" alt = "Pineapple" />
+				          	</div>
+
+				          	<div class = "product-card-body">
+				            	<span class = "product-card-name"> Pineapple </span>
+				            	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				          	</div>
+				        </div>
+
+				        <div class = "product-card">
+				          	<div class = "product-card-img">
+				            	<img src = "https://i.ibb.co/xqD1LhdB/mango-fruit.png" alt = "Mango" />
+				          	</div>
+
+				          	<div class = "product-card-body">
+				            	<span class = "product-card-name"> Mango </span>
+				            	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				          	</div>
+				        </div>
+
+				        <div class = "product-card">
+				          	<div class = "product-card-img">
+				            	<img src = "https://i.ibb.co/fdQK0Yfj/passion-fruit.png" alt = "Passion Fruit" />
+				          	</div>
+
+				          	<div class = "product-card-body">
+				            	<span class = "product-card-name"> Passion Fruit </span>
+				            	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				          	</div>
+				        </div>
+
+				        <div class = "product-card">
+				          	<div class = "product-card-img">
+				            	<img src = "https://i.ibb.co/99NkpbPD/herb-2.png" alt = "Avocado" />
+				          	</div>
+
+				          	<div class = "product-card-body">
+				            	<span class = "product-card-name"> Avocado </span>
+				            	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				          	</div>
+				        </div>
+
+			      	</div>
+			    </div>
+			    <!--fruits end-->
+
+			    <!--category: vegetables-->
+			    <div class = "category-section" id = "vegetables">
+			      	<div class = "category-header">
+				        <div class = "category-icon"> <i class = "fas fa-carrot"></i> </div>
+				        <h3 class = "category-title"> Vegetables </h3>
+				        <div class = "category-divider"></div>
+			      	</div>
+
+			      	<div class = "category-grid">
+
+						<div class = "product-card">
+							<div class = "product-card-img">
+								<img src = "https://i.ibb.co/NnrDqnp3/broccoli.png" alt = "Broccoli" />
 							</div>
 
-							<div class = "product-page-box-desc">
-								<p> Basil </p>
+							<div class = "product-card-body">
+								<span class = "product-card-name"> Broccoli </span>
+								<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
 							</div>
 						</div>
 
-						<div class = "product-page-box">
-							<div class = "product-page-box-img">
-								<img src = "https://i.ibb.co/ccssRGtf/rosemary.png" alt="rosemary" />
+			        	<div class = "product-card">
+							<div class = "product-card-img">
+								<img src = "https://i.ibb.co/Txwrbjgq/beans.png" alt = "Beans" />
 							</div>
 
-							<div class = "product-page-box-desc">
-								<p> Rosemary </p>
+							<div class = "product-card-body">
+								<span class = "product-card-name"> Beans </span>
+								<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
 							</div>
-						</div>
+			        	</div>
 
-						<div class = "product-page-box">
-							<div class = "product-page-box-img">
-								<img src = "https://i.ibb.co/606mRTrn/mint.png" alt="mint" />
-							</div>
-
-							<div class = "product-page-box-desc">
-								<p> Mint </p>
-							</div>
-						</div>
-
-						<div class = "product-page-box">
-							<div class = "product-page-box-img">
-								<img src = "https://i.ibb.co/5XW1cnXz/spring-onion.png" />
+			        	<div class = "product-card">
+							<div class = "product-card-img">
+								<img src = "https://i.ibb.co/Z6V0JMJ7/corn.png" alt = "Corn" />
 							</div>
 
-							<div class = "product-page-box-desc">
-								<p> Spring Onions </p>
+							<div class = "product-card-body">
+								<span class = "product-card-name"> Corn </span>
+								<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
 							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		<!--products end-->
+			        	</div>
+
+			        	<div class="product-card">
+							<div class = "product-card-img">
+								<img src = "https://i.ibb.co/5XW1cnXz/spring-onion.png" alt = "Spring Onions" />
+							</div>
+
+							<div class = "product-card-body">
+								<span class = "product-card-name"> Spring Onions </span>
+								<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+							</div>
+			        	</div>
+
+			        	<div class="product-card">
+							<div class = "product-card-img">
+								<img src = "images/products/chilli.jpg" alt = "Chilli" />
+							</div>
+
+							<div class = "product-card-body">
+								<span class = "product-card-name"> Chilli </span>
+								<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+							</div>
+			        	</div>
+
+			        	<div class = "product-card">
+							<div class = "product-card-img">
+								<img src = "images/products/capsicum.jpg" alt = "Capsicum" />
+							</div>
+
+							<div class = "product-card-body">
+								<span class = "product-card-name"> Capsicum </span>
+								<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+							</div>
+			        	</div>
+
+			      	</div>
+			    </div>
+			    <!--vegetables end-->
+
+			    <!--category: fresh herbs-->
+			    <div class = "category-section" id = "herbs">
+			      	<div class = "category-header">
+				        <div class = "category-icon"> <i class = "fas fa-seedling"></i> </div>
+				        <h3 class = "category-title"> Fresh Herbs </h3>
+				        <div class = "category-divider"></div>
+			      	</div>
+
+			      	<div class = "category-grid">
+
+				        <div class = "product-card">
+				          	<div class = "product-card-img">
+				            	<img src = "images/herbs/basil-2.jpg" alt = "Basil" />
+				          	</div>
+
+				          	<div class = "product-card-body">
+				            	<span class = "product-card-name"> Basil </span>
+				            	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				          	</div>
+				        </div>
+
+				        <div class = "product-card">
+				          	<div class = "product-card-img">
+				            	<img src = "https://i.ibb.co/ccssRGtf/rosemary.png" alt = "Rosemary" />
+				          	</div>
+
+				          	<div class = "product-card-body">
+				            	<span class = "product-card-name"> Rosemary </span>
+				            	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				          	</div>
+				        </div>
+
+				        <div class = "product-card">
+				          	<div class = "product-card-img">
+				            	<img src = "https://i.ibb.co/606mRTrn/mint.png" alt = "Mint" />
+				          	</div>
+
+				          	<div class = "product-card-body">
+				            	<span class = "product-card-name"> Mint </span>
+				            	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				          	</div>
+				        </div>
+
+				        <div class = "product-card">
+				          	<div class = "product-card-img">
+				            	<img src = "https://i.ibb.co/SDbmWtyP/culinary-herbs.png" alt = "Culinary Herbs" />
+				          	</div>
+
+				          	<div class = "product-card-body">
+				            	<span class = "product-card-name"> Culinary Herbs </span>
+				            	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				          	</div>
+				        </div>
+
+			      	</div>
+			    </div>
+			    <!--fresh herbs end-->
+
+			    <!--category: grains & seeds-->
+			    <div class = "category-section" id = "grains">
+			      	<div class = "category-header">
+			        	<div class = "category-icon"> <i class = "fas fa-leaf"></i> </div>
+			        	<h3 class = "category-title"> Grains &amp; Seeds </h3>
+			        	<div class = "category-divider"></div>
+			      	</div>
+
+			      	<div class = "category-grid">
+
+				        <div class = "product-card">
+				          	<div class = "product-card-img">
+				            	<img src = "https://i.ibb.co/FqhB9JPy/sesame.png" alt = "Sesame Seeds" />
+				          	</div>
+
+				          	<div class = "product-card-body">
+				            	<span class = "product-card-name"> Sesame Seeds </span>
+				            	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				          	</div>
+				        </div>
+
+				        <div class = "product-card">
+				          	<div class = "product-card-img">
+				            	<img src = "https://i.ibb.co/Zz5NQPqJ/macadamia.png" alt = "Macadamia" />
+				          	</div>
+
+				          	<div class = "product-card-body">
+				            	<span class = "product-card-name"> Macadamia </span>
+				            	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				          	</div>
+				        </div>
+
+				        <div class = "product-card">
+				          	<div class = "product-card-img">
+				            	<img src = "https://i.ibb.co/PsP1hCRR/sisal.png" alt = "Sisal" />
+				          	</div>
+
+				          	<div class = "product-card-body">
+				            	<span class = "product-card-name"> Sisal </span>
+				            	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				          	</div>
+				        </div>
+
+			      	</div>
+			    </div>
+			    <!--grains & seeds end-->
+
+		  	</div>
+		</section>
+		<!--products page end-->
 
 		<!--footer-->
 			<section class = "footer-cover" id = "footer">

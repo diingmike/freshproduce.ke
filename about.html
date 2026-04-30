@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title> Fresh Produce Exporters KE LTD </title>
+
+		<meta charset = "UTF-8" />
+		<meta name = "author" content = "Michael Chan" /> <!--date of creation; Mon, June 9, 2025-->
+		<meta name = "viewport" content = "width=device-width,initial-scale=1,shrink-to-fit=no" />
+
+		<!--custom css-->
+		<link rel = "stylesheet" href = "css/style.css" />
+
+		<!--font awesome link-->
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+		<!-- Google Fonts: Oswald (display) + Nunito Sans (body) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!--header-->
+		<div class = "header-cover" id = "header-cover">
+			<!--top info bar-->
+			<div class = "top-bar">
+				<div class = "top-bar-inner">
+					<div class = "top-bar-contacts">
+          				<span> <i class = "fas fa-phone-alt"></i> +254 700 000 000 </span>
+          				<span> <i class = "fas fa-envelope"></i> info@freshproduceke.com </span>
+          				<span class = "top-bar-location"> <i class = "fas fa-map-marker-alt"></i> Nairobi, Kenya </span>
+        			</div>
+
+        			<div class = "top-bar-right">
+          				<span class = "top-bar-tagline"> Premium Exports. Farm Fresh. </span>
+          				<div class = "top-bar-social">
+            				<a href = "#" aria-label = "Facebook"> <i class = "fab fa-facebook-f"></i> </a>
+            				<a href = "#" aria-label = "Instagram"> <i class = "fab fa-instagram"></i> </a>
+          				</div>
+        			</div>
+				</div>
+			</div>
+
+			<!--main header-->
+			<div class = "header-main">
+      			<div class = "container header-main-inner">
+      				<!--logo-->
+			        <a class = "logo" href = "index.html" aria-label = "Fresh Produce Exporters KE — Home">
+			          	<img src = "images/logo.png" alt = "Fresh Produce Exporters KE Logo" class = "logo-img" />
+			          	<span class = "logo-badge"> Exporters KE Ltd </span>
+			        </a>
+
+			        <!--desktop navigation-->
+			        <nav class = "nav" aria-label = "Main navigation">
+			          	<ul class = "nav-list">
+				            <li class = "nav-item nav-item--active">
+				            	<a href = "index.html"> Home </a>
+				            </li>
+				            <li class = "nav-item">
+				            	<a href = "products.html"> Products </a>
+				            </li>
+				            <li class = "nav-item">
+				            	<a href = "about.html"> About Us </a>
+				            </li>
+				            <li class = "nav-item">
+				            	<a href = "contact.html"> Contact </a>
+				            </li>
+			          	</ul>
+			        </nav>
+
+			        <!-- Header Actions -->
+			        <div class = "header-actions">
+			          	<a class = "btn-cta" href = "contact.html">
+			            	<span> Get a Quote </span>
+			            	<i class = "fas fa-arrow-right"></i>
+			          	</a>
+
+			          	<!--hamburger-->
+			          	<button	class = "hamburger" 
+			          			id = "hamburger" 
+			          			aria-label = "Toggle navigation menu" 
+			          			aria-expanded = "false" 
+			          			aria-controls = "mobile-menu">
+			            	<span class = "hamburger-bar"></span>
+			            	<span class = "hamburger-bar"></span>
+			            	<span class = "hamburger-bar"></span>
+			          	</button>
+			        </div>
+
+      			</div>
+  			</div>
+  			<!--main header end-->
+
+  			<!--tri-colour accent stripe-->
+		    <div class = "header-stripe" aria-hidden = "true">
+		      	<span class = "stripe stripe--green"></span>
+		      	<span class = "stripe stripe--red"></span>
+		      	<span class = "stripe stripe--black"></span>
+		    </div>
+
+		    <!--mobile menu-->
+		    <div class = "mobile-menu" id = "mobile-menu" aria-hidden = "true">
+		      	<nav aria-label = "Mobile navigation">
+			        <ul class = "mobile-menu-list">
+			          	<li> 
+			          		<a href = "index.html"> <i class = "fas fa-home"></i> <span> Home </span> </a>
+			          	</li>
+			          	<li> 
+			          		<a href = "products.html"> <i class = "fas fa-seedling"></i> <span> Products </span> </a>
+			          	</li>
+			          	<li> 
+			          		<a href = "about.html"> <i class = "fas fa-info-circle"></i> <span> About Us </span> </a>
+			          	</li>
+			          	<li> 
+			          		<a href = "contact.html"> <i class = "fas fa-envelope"></i> <span> Contact </span> </a> 
+			          	</li>
+			        </ul>
+
+			        <a class = "btn-cta btn-cta--mobile" href = "contact.html">
+			          	<span> Get a Quote </span>
+			          	<i class = "fas fa-arrow-right"></i>
+			        </a>
+
+			        <div class = "mobile-menu-contacts">
+			          	<span> <i class = "fas fa-phone-alt"></i> +254 700 000 000 </span>
+			          	<span> <i class = "fas fa-envelope"></i> info@freshproduceke.com </span>
+			        </div>
+		      	</nav>
+		    </div>
+		    <!--mobile menu end-->
+
+		</div>
+		<!--header end-->
+
+		<!--dynamic spacer — height set by JS to match actual header height-->
+  		<div class = "header-spacer" id = "header-spacer"></div>
+
+		<!--about us-->
+		<section class = "about">
+		  	<div class = "container">
+
+			    <!--section header-->
+			    <div class = "section-header">
+			      	<div class = "section-label"> Our Story </div>
+			      	<h1 class = "section-title"> Who <em> We Are </em> </h1>
+			      	<p class = "section-sub"> Committed to quality service &amp; produce since 2006. </p>
+			    </div>
+
+			    <!--two-column layout-->
+			    <div class = "about-layout">
+
+			      	<!--left: story text + why us-->
+			      	<div class="about-story">
+				        <p>
+				          	Kenya Fresh Produce Exporters LTD is a limited liability company, incorporated
+				          	under the Kenyan Companies Act 2005 and began operation in 2006. We source and
+				          	export a wide range of fresh vegetables, fruits and cut flowers from Kenya.
+				        </p>
+				        <p>
+				          	We engage in the sourcing, processing and marketing of avocados, sisal,
+				          	blueberries, sesame, pineapple, macadamia, tea, capsicum and chilli. We offer
+				          	fresh fruits and vegetables at the best value price. We meet regularly with our
+				          	farmers and stakeholders in the market to keep up to date on price and supply.
+				        </p>
+				        <p>
+				          	Our supply chain is optimized for our clients. We see to it that fruits and
+				          	vegetables have timely movement from harvest to exportation. We pride ourselves
+				          	on supplying the finest produce and providing unparalleled customer service.
+				        </p>
+
+				        <!--why us block-->
+				        <div class = "about-why">
+				          	<div class = "about-why-title">
+				            	<i class = "fas fa-star"></i> Why Us
+				          	</div>
+				          	<p>
+				            	Some of our many goals are conserving energy and resources, waste reduction,
+				            	recycling, and use of renewed products. We are dedicated to fostering good
+				            	relationships with our employees, business partners and local community. We
+				            	continually strive to maintain the highest standards for a first class food
+				            	safety program. Quality and customer satisfaction are our top priorities.
+				          </p>
+				        </div>
+			      	</div>
+			      	<!--story end-->
+
+			      	<!--right: value pillars-->
+			      	<div class = "about-pillars">
+
+				        <div class = "about-pillar">
+				          	<div class = "about-pillar-icon"> <i class = "fas fa-seedling"></i> </div>
+				          	<div class = "about-pillar-body">
+				            	<h3 class = "about-pillar-title"> Direct Farm Sourcing </h3>
+				            	<p class = "about-pillar-desc">
+				            		We work directly with Kenyan farmers, ensuring traceability and freshness from field to export.
+				            	</p>
+				          	</div>
+				        </div>
+
+				        <div class = "about-pillar">
+				          	<div class = "about-pillar-icon"> <i class = "fas fa-recycle"></i> </div>
+				          	<div class = "about-pillar-body">
+				            	<h3 class = "about-pillar-title"> Sustainability </h3>
+				            	<p class = "about-pillar-desc">
+				            		Energy conservation, waste reduction and use of renewed products are central to how we operate.
+				            	</p>
+				          	</div>
+				        </div>
+
+				        <div class = "about-pillar">
+				          	<div class = "about-pillar-icon"> <i class = "fas fa-shield-alt"></i> </div>
+				          	<div class = "about-pillar-body">
+				            	<h3 class = "about-pillar-title"> Food Safety First </h3>
+				            	<p class = "about-pillar-desc">
+				            		We maintain the highest international food safety standards at every stage of the supply chain.
+				            	</p>
+				          	</div>
+				        </div>
+
+				        <div class = "about-pillar">
+				          	<div class = "about-pillar-icon"> <i class = "fas fa-handshake"></i> </div>
+				          	<div class = "about-pillar-body">
+				            	<h3 class = "about-pillar-title"> Strong Partnerships </h3>
+				            	<p class = "about-pillar-desc">
+				            		Good relationships with employees, business partners and the local community drive everything we do.
+				            	</p>
+				          	</div>
+				        </div>
+
+			      	</div>
+			      	<!--pillars end-->
+
+			    </div>
+			    <!--about-layout end-->
+
+			    <!--bottom highlight cards-->
+			    <div class = "about-highlights">
+
+			      	<div class = "highlight-card">
+				        <div class = "highlight-icon"> <i class = "fas fa-apple-alt"></i> </div>
+				        <h3 class = "highlight-name"> Fresh Food </h3>
+				        <p class = "highlight-desc"> Farm-fresh produce harvested and processed to international export quality. </p>
+			      	</div>
+
+			      	<div class = "highlight-card">
+				        <div class = "highlight-icon"> <i class = "fas fa-shipping-fast"></i> </div>
+				        <h3 class = "highlight-name"> Fast Service </h3>
+				        <p class = "highlight-desc"> Optimised supply chain ensuring timely movement from harvest to delivery. </p>
+			      	</div>
+
+			      	<div class = "highlight-card">
+			        	<div class = "highlight-icon"> <i class = "fas fa-headset"></i> </div>
+			        	<h3 class = "highlight-name"> Customer Support </h3>
+			        	<p class = "highlight-desc"> Dedicated support team keeping you informed at every step of your order. </p>
+			      	</div>
+
+			    </div>
+			    <!--highlights end-->
+
+			    <!--bottom tri-colour stripe-->
+			    <div class = "section-stripe" aria-hidden = "true">
+			      	<span class = "ss-g"></span>
+			      	<span class = "ss-r"></span>
+			      	<span class = "ss-b"></span>
+			    </div>
+
+		  	</div>
+		</section>
+		<!--about us ends-->
+
+		<!--footer-->
+		<section class = "footer-cover" id = "footer">
+
+		  	<!--top tri-colour stripe-->
+		  	<div class = "footer-stripe" aria-hidden = "true">
+		    	<span class = "fs-g"></span>
+		    	<span class = "fs-r"></span>
+		    	<span class = "fs-b"></span>
+		  	</div>
+
+		  	<div class = "container">
+
+			    <!--brand row-->
+			    <div class = "footer-brand">
+			      	<a class = "footer-logo" href = "index.html" aria-label = "Fresh Produce Exporters KE Home">
+			        	<img src="images/footer-logo.png" alt = "Fresh Produce Exporters KE Logo" />
+			      	</a>
+			      	<p class = "footer-tagline">
+			      		Premium Exports &nbsp;&bull;&nbsp; Farm Fresh &nbsp;&bull;&nbsp; Nairobi, Kenya
+			      	</p>
+			    </div>
+
+			    <!--three-column grid-->
+			    <div class = "footer-grid">
+
+			      	<!--contact-->
+			      	<div class = "footer-col">
+				        <span class = "footer-col-title"> Contact Us </span>
+
+				        <div class = "footer-row">
+				          	<div class = "footer-icon"> <i class = "fas fa-envelope"></i> </div>
+				          	<div class = "footer-row-text">
+				            	<a href = "mailto:horticulture@freshproducekenya.com"> horticulture@freshproducekenya.com </a>
+				          	</div>
+				        </div>
+
+				        <div class = "footer-row">
+				          	<div class = "footer-icon"> <i class = "fas fa-envelope"></i> </div>
+				          	<div class = "footer-row-text">
+				            	<a href = "mailto:avocado@freshproducekenya.com"> avocado@freshproducekenya.com </a>
+				          	</div>
+				        </div>
+
+				        <div class = "footer-row">
+				          	<div class = "footer-icon"> <i class = "fas fa-envelope"></i> </div>
+				          	<div class = "footer-row-text">
+				            	<a href = "mailto:exports@freshproducekenya.com"> exports@freshproducekenya.com </a>
+				          	</div>
+				        </div>
+			      	</div>
+			      	<!--contact end-->
+
+			      	<!--locate-->
+			      	<div class = "footer-col">
+				        <span class = "footer-col-title"> Locate Us </span>
+
+				        <div class = "footer-row">
+				          	<div class = "footer-icon"> <i class = "fas fa-map-marker-alt"></i> </div>
+				          	<div class = "footer-row-text">
+				            	<span> Uchumi Building </span>
+				            	<span> Off General Kago Road </span>
+				            	<span> Thika, Kenya </span>
+				          	</div>
+				        </div>
+
+				        <div class = "footer-row">
+				          	<div class = "footer-icon"> <i class = "fas fa-phone-alt"></i> </div>
+				          	<div class = "footer-row-text">
+				            	<a href = "tel:+254700000000"> +254 700 000 000 </a>
+				          	</div>
+				        </div>
+			      	</div>
+			      	<!--locate end-->
+
+			      	<!--quick links-->
+			      	<div class = "footer-col">
+				        <span class = "footer-col-title"> Quick Links </span>
+
+				        <ul class = "footer-links">
+				          	<li> <a href = "index.html"> <i class = "fas fa-chevron-right"></i> Home </a> </li>
+				          	<li> <a href = "products.html"> <i class = "fas fa-chevron-right"></i> Products </a> </li>
+				          	<li> <a href = "about.html"> <i class = "fas fa-chevron-right"></i> About Us </a> </li>
+				          	<li> <a href = "contact.html"> <i class = "fas fa-chevron-right"></i> Contact </a> </li>
+				        </ul>
+
+				        <div class = "footer-social">
+				          	<a class = "social-btn" href = "#" aria-label = "Facebook"> <i class = "fab fa-facebook-f"></i> </a>
+				          	<a class = "social-btn" href = "#" aria-label = "Instagram"> <i class = "fab fa-instagram"></i> </a>
+				        </div>
+			      	</div>
+			      	<!--quick links end-->
+
+			    </div>
+			    <!--footer-grid end-->
+
+			    <!--bottom bar-->
+			    <div class = "footer-bottom">
+			      	<p class = "footer-copy">
+			        	&copy; Fresh Produce Exporters Kenya LTD <span id = "year"></span>. All rights reserved.
+			      	</p>
+
+			      	<p class = "footer-copy">
+			        	Designed with <span class = "footer-heart">&#10084;</span> in Nairobi
+			      	</p>
+			    </div>
+
+		  	</div>
+		</section>
+
+		<!--back to top button-->
+		<a class = "back-to-top" href = "#" aria-label = "Back to top">
+		  	<i class = "fas fa-arrow-up"></i>
+		</a>
+		<!--footer end-->
+
+		<!--javascript-->
+		<script src = "js/script.js"></script>
+		<!--javascript end-->
+	</body>
+</html>

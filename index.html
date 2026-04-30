@@ -1,319 +1,655 @@
-<html lang = "en" dir = "ltr">
+<!DOCTYPE html>
+<html lang = "en">
 	<head>
 		<title> Fresh Produce Exporters KE LTD </title>
 
 		<meta charset = "UTF-8" />
 		<meta name = "author" content = "Michael Chan" /> <!--date of creation; Mon, June 9, 2025-->
-		<meta http-equiv = "X-UA-Compatible" content = "IE=edge" />
 		<meta name = "viewport" content = "width=device-width,initial-scale=1,shrink-to-fit=no" />
 
 		<!--custom css-->
 		<link rel = "stylesheet" href = "css/style.css" />
 
-		<!--nav responsiveness css-->
-		<link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<!--font awesome link-->
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
-		<!--tailwind for session messages-->
-		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
-		<!-- link to google font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
-
-		<!--bootstrap css-->
-		<link href ="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+		<!-- Google Fonts: Oswald (display) + Nunito Sans (body) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
 	</head>
 
-	<body style = "background-color: white; color: black;">
+	<body>
 		<!--header-->
-			<div class = "header-cover">
-				<div class = "container">
-					<header>
-						<input type = "checkbox" id = "check" />
-						<label for = "check" class = "checkbtn">
-							<i class = "fas fa-bars"></i>
-						</label>
+		<div class = "header-cover" id = "header-cover">
+			<!--top info bar-->
+			<div class = "top-bar">
+				<div class = "top-bar-inner">
+					<div class = "top-bar-contacts">
+          				<span> <i class = "fas fa-phone-alt"></i> +254 700 000 000 </span>
+          				<span> <i class = "fas fa-envelope"></i> info@freshproduceke.com </span>
+          				<span class = "top-bar-location"> <i class = "fas fa-map-marker-alt"></i> Nairobi, Kenya </span>
+        			</div>
 
-						<div class = "logo">
-							<a href = "index.html"> <img src = "images/logo.png" /> </a>
-						</div>
-
-						<ul>
-							<li> <a href = "index.html"> <b> Home </b> </a> </li>
-							<li> <a href = "about-us.html"> <b> About Us </b> </li>
-							<li> <a href = "products.html"> <b> Products </b> </a> </li>
-							<li> <a href = "index.html#footer"> <b> Contact </b> </a> </li>
-						</ul>
-					</header>
+        			<div class = "top-bar-right">
+          				<span class = "top-bar-tagline"> Premium Exports. Farm Fresh. </span>
+          				<div class = "top-bar-social">
+            				<a href = "#" aria-label = "Facebook"> <i class = "fab fa-facebook-f"></i> </a>
+            				<a href = "#" aria-label = "Instagram"> <i class = "fab fa-instagram"></i> </a>
+          				</div>
+        			</div>
 				</div>
 			</div>
-		<!--header ends-->
 
-		<!--banner-->
-			<div id = "mainBannerCarousel" class = "carousel slide" data-bs-ride = "carousel">
-				<div class = "carousel-inner">
-					<!--first slide-->
-					<div class = "carousel-item active">
-						<div class = "banner" style = "background-image: url('images/banner-one.jpg');">
-							<div class = "container banner-content">
-								<h1> We serve fresh fruits & vegetables </h1>
-								<h2> We deliver fresh fruits & vegetables </h2>
-							</div>
-						</div>
-					</div>
+			<!--main header-->
+			<div class = "header-main">
+      			<div class = "container header-main-inner">
+      				<!--logo-->
+			        <a class = "logo" href = "index.html" aria-label = "Fresh Produce Exporters KE — Home">
+			          	<img src = "images/logo.png" alt = "Fresh Produce Exporters KE Logo" class = "logo-img" />
+			          	<span class = "logo-badge"> Exporters KE Ltd </span>
+			        </a>
 
-					<!--second slide-->
-					<div class = "carousel-item">
-						<div class = "banner" style = "background-image: url('images/banner-two.jpg');">
-							<div class = "container banner-content">
-								<h1> Quality produce at your doorstep </h1>
-								<h2> Fast & reliable delivery services </h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			        <!--desktop navigation-->
+			        <nav class = "nav" aria-label = "Main navigation">
+			          	<ul class = "nav-list">
+				            <li class = "nav-item nav-item--active">
+				            	<a href = "index.html"> Home </a>
+				            </li>
+				            <li class = "nav-item">
+				            	<a href = "products.html"> Products </a>
+				            </li>
+				            <li class = "nav-item">
+				            	<a href = "about.html"> About Us </a>
+				            </li>
+				            <li class = "nav-item">
+				            	<a href = "contact.html"> Contact </a>
+				            </li>
+			          	</ul>
+			        </nav>
+
+			        <!-- Header Actions -->
+			        <div class = "header-actions">
+			          	<a class = "btn-cta" href = "contact.html">
+			            	<span> Get a Quote </span>
+			            	<i class = "fas fa-arrow-right"></i>
+			          	</a>
+
+			          	<!--hamburger-->
+			          	<button	class = "hamburger" 
+			          			id = "hamburger" 
+			          			aria-label = "Toggle navigation menu" 
+			          			aria-expanded = "false" 
+			          			aria-controls = "mobile-menu">
+			            	<span class = "hamburger-bar"></span>
+			            	<span class = "hamburger-bar"></span>
+			            	<span class = "hamburger-bar"></span>
+			          	</button>
+			        </div>
+
+      			</div>
+  			</div>
+  			<!--main header end-->
+
+  			<!--tri-colour accent stripe-->
+		    <div class = "header-stripe" aria-hidden = "true">
+		      	<span class = "stripe stripe--green"></span>
+		      	<span class = "stripe stripe--red"></span>
+		      	<span class = "stripe stripe--black"></span>
+		    </div>
+
+		    <!--mobile menu-->
+		    <div class = "mobile-menu" id = "mobile-menu" aria-hidden = "true">
+		      	<nav aria-label = "Mobile navigation">
+			        <ul class = "mobile-menu-list">
+			          	<li> 
+			          		<a href = "index.html"> <i class = "fas fa-home"></i> <span> Home </span> </a>
+			          	</li>
+			          	<li> 
+			          		<a href = "products.html"> <i class = "fas fa-seedling"></i> <span> Products </span> </a>
+			          	</li>
+			          	<li> 
+			          		<a href = "about.html"> <i class = "fas fa-info-circle"></i> <span> About Us </span> </a>
+			          	</li>
+			          	<li> 
+			          		<a href = "contact.html"> <i class = "fas fa-envelope"></i> <span> Contact </span> </a> 
+			          	</li>
+			        </ul>
+
+			        <a class = "btn-cta btn-cta--mobile" href = "contact.html">
+			          	<span> Get a Quote </span>
+			          	<i class = "fas fa-arrow-right"></i>
+			        </a>
+
+			        <div class = "mobile-menu-contacts">
+			          	<span> <i class = "fas fa-phone-alt"></i> +254 700 000 000 </span>
+			          	<span> <i class = "fas fa-envelope"></i> info@freshproduceke.com </span>
+			        </div>
+		      	</nav>
+		    </div>
+		    <!--mobile menu end-->
+
+		</div>
+		<!--header end-->
+
+		<!--dynamic spacer — height set by JS to match actual header height-->
+  		<div class = "header-spacer" id = "header-spacer"></div>
+
+  		<!--banner-->
+		<div class = "banner-section" id = "bannerSection">
+
+		  	<!--slide 1-->
+		  	<div class = "slide active" id = "slide-0">
+			    <div class = "slide-bg" style = "background-image: url('images/banner-one.jpg');"></div>
+
+			    <div class = "slide-content">
+			      	<div class = "container">
+			        	<span class = "slide-tag"> &#9670; Since 2020 &nbsp;|&nbsp; Nairobi, Kenya </span>
+			        	<h1 class = "slide-h1"> We serve <em> fresh fruits &amp; vegetables </em> </h1>
+			        	<p class = "slide-h2"> Farm-to-export quality produce, sourced directly from Kenya's finest farms. </p>
+			        	<div class = "slide-actions">
+			          		<a class = "btn-primary" href = "about.html#products"> Our Products &#8594; </a>
+			          		<a class = "btn-banner-secondary" href = "contact.html"> Get a Quote </a>
+			        	</div>
+			      	</div>
+			    </div>
+		  	</div>
+
+		  	<!--slide 2-->
+		  	<div class = "slide" id = "slide-1">
+			    <div class = "slide-bg" style = "background-image: url('images/banner-two.jpg');"></div>
+
+			    <div class = "slide-content">
+			      	<div class = "container">
+				        <span class = "slide-tag"> &#9670; Reliable &nbsp;|&nbsp; Export-Ready </span>
+				        <h1 class = "slide-h1"> Quality produce <em> at your doorstep </em> </h1>
+				        <p class = "slide-h2"> Fast, reliable delivery services connecting Kenyan farms to global markets. </p>
+				        <div class = "slide-actions">
+				          	<a class = "btn-primary" href = "contact.html"> Contact Us &#8594; </a>
+				          	<a class = "btn-banner-secondary" href = "about.html"> About Us </a>
+				        </div>
+			      	</div>
+			    </div>
+		  	</div>
+
+		  	<!--progress bar-->
+		  	<div class = "banner-progress">
+		    	<div class = "banner-progress-bar" id = "progressBar"></div>
+		  	</div>
+
+		  	<!--dots-->
+		  	<div class = "banner-dots">
+		    	<button class = "dot active" data-index = "0" aria-label = "Slide 1"></button>
+		    	<button class = "dot" data-index = "1" aria-label = "Slide 2"></button>
+		  	</div>
+
+		  	<!--slide counter-->
+		  	<div class = "slide-counter">
+		    	<span id = "counterCurrent"> 01 </span> / 02
+		  	</div>
+
+		  	<!--arrows-->
+		  	<button class = "banner-arrow banner-arrow--prev" id = "prevBtn" aria-label = "Previous slide"> &#8592; </button>
+		  	<button class = "banner-arrow banner-arrow--next" id = "nextBtn" aria-label = "Next slide"> &#8594; </button>
+
+		  	<!--bottom tri-colour stripe-->
+		  	<div class = "banner-stripe" aria-hidden = "true">
+		    	<span class = "s-g"></span>
+		    	<span class = "s-r"></span>
+		    	<span class = "s-b"></span>
+		  	</div>
+
+		</div>
 		<!--banner ends-->
 
-		<!--script to enable automatic slide every few seconds-->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+		<!--commitment section-->
+		<section class = "commitment">
+		  	<div class = "container">
 
-		<!--services-->
-			<!--<section class = "services" id = "services">
-				<div class = "container">
-					<div class = "service-container">
-						<div class = "service-box">
-							<img src = "images/services/shipping-2.jpg" />
-							<p> Free Shipping </p>
-							<p> <span> On orders over Ksh 10,000 </span> </p>
-						</div>
+			    <!--section header-->
+			    <div class = "section-header">
+			      	<div class = "section-label"> Our Commitment </div>
+			      	<h2 class = "section-title"> Committed to <em> quality </em> &amp; service </h2>
+			      	<p class = "section-intro">
+			        	Kenya Fresh Produce Exporters LTD — sourcing, processing and delivering
+			        	the finest farm produce from Kenya to the world since 2006.
+			      	</p>
+			    </div>
 
-						<div class = "service-box">
-							<img src = "images/services/fresh-2.jpg" />
-							<p> Always Fresh </p>
-							<p> <span> Product well packaged </span> </p>
-						</div>
+			    <div class = "commitment-layout">
 
-						<div class = "service-box">
-							<img src = "images/services/quality.jpg" />
-							<p> Superior Quality </p>
-							<p> <span> Quality products </span> </p>
-						</div>
+			      	<!--left: story text + stats-->
+			      	<div class = "commitment-story">
+			        	<p>
+			          		Incorporated under the Kenyan Companies Act 2005, we source and export a wide
+			          		range of fresh vegetables, fruits and cut flowers from Kenya. We engage directly
+			          		with farmers to ensure quality at every step of the supply chain.
+			        	</p>
+			        	<p>
+			          		We engage in the sourcing, processing and marketing of avocados, sisal,
+			          		blueberries, sesame, pineapple, macadamia, tea, capsicum and chilli — offering
+			          		the best value while meeting international export standards.
+			        	</p>
 
-						<div class = "service-box">
-							<img src = "images/services/support.jpg" />
-							<p> Support </p>
-							<p> <span> 24 / 7 support </span> </p>
-						</div>
-					</div>
-				</div>
-			</section>-->
-		<!--services end-->
+				        <!--stats grid-->
+				        <div class = "commitment-stats">
+				          	<div class = "stat-card">
+				            	<div class = "stat-number"> 18 <span> + </span> </div>
+				            	<div class = "stat-label"> Years in operation </div>
+				          	</div>
 
-		<!--welcome section-->
-			<section class = "welcome">
-				<div class = "container">
-					<h1 class = "section-title"> Welcome to Fresh Produce Exporters Kenya LTD  </h1>
-					<h2 class = "section-sub-title"> We are committed to quality service & produce </h2>
+				          	<div class = "stat-card stat-card--red">
+				            	<div class = "stat-number"> 10 <span> + </span> </div>
+				            	<div class = "stat-label"> Produce varieties </div>
+				          	</div>
 
-					<div class = "welcome-container">
-						<img src = "images/logo-2.jpg" />
+				          	<div class = "stat-card">
+				            	<div class = "stat-number"> 100 <span> % </span> </div>
+				            	<div class = "stat-label"> Farm fresh sourcing </div>
+				          	</div>
 
-						<p>
-						
-						Kenya Fresh Produce Exporters LTD is a limited liability company, incorporated under the Kenyan companies act 2005 and began operation in 2006. We source and export a wide range of fresh vegetables, fruits and cut flowers from Kenya.
+				          	<div class = "stat-card stat-card--red">
+				            	<div class = "stat-number"> KE <span> &rarr; </span> </div>
+				            	<div class = "stat-label"> Global export reach </div>
+				          	</div>
+				        </div>
 
-						<br/> <br/>
+			        	<a class = "btn-primary" href = "about.html">
+			          		Learn More <i class = "fas fa-arrow-right"></i>
+			        	</a>	
+			      	</div>
 
-						We engage in the sourcing, processing and marketing of avocados, sisal, blueberries, sesame, pineapple, macadamia, tea, capsicum and chilli. We offer fresh fruits and vegetables at the best value price. We meet regularly with our farmers and 
-						stakeholders in the market to keep up to date on price and supply.
-						
-						<br/> <br/>
+			      	<!--right: icon pillars-->
+			      	<div class = "commitment-pillars">
 
-						<a href = "about-us.html" class = "welcome-btn"> Learn More </a>
+			        	<div class = "pillar">
+			          		<div class = "pillar-icon">
+			            		<i class = "fas fa-seedling"></i>
+			          		</div>
 
-						</p>
-					</div>
-				</div>
-			</section>
-		<!--welcome section ends-->
+			          		<div class = "pillar-body">
+			            		<h3 class = "pillar-title"> Farm-Fresh Sourcing </h3>
+			            		<p class = "pillar-desc">
+			              			We work directly with Kenyan farmers, cutting out intermediaries to
+			              			guarantee freshness and full traceability from field to export.
+			            		</p>
+			          		</div>
+			        	</div>
+
+			        	<div class = "pillar">
+			          		<div class = "pillar-icon">
+			            		<i class = "fas fa-award"></i>
+			          		</div>
+
+			          		<div class = "pillar-body">
+			            		<h3 class = "pillar-title"> Quality Assurance </h3>
+			            		<p class = "pillar-desc">
+			              			Every batch is inspected and processed to meet international standards
+			              			before it leaves our facility.
+			            		</p>
+			          		</div>
+			        	</div>
+
+			        	<div class = "pillar">
+			          		<div class = "pillar-icon">
+			            		<i class = "fas fa-handshake"></i>
+			          		</div>
+
+			          		<div class = "pillar-body">
+			            		<h3 class = "pillar-title"> Farmer Partnerships </h3>
+			            		<p class = "pillar-desc">
+			              			Regular engagement with our farmers and market stakeholders keeps us
+			              			aligned on price, supply and seasonal availability.
+			            		</p>
+			          		</div>
+			        	</div>
+
+			        	<div class = "pillar">
+			          		<div class = "pillar-icon">
+			            		<i class = "fas fa-globe-africa"></i>
+			          		</div>
+
+			          		<div class = "pillar-body">
+			            		<h3 class = "pillar-title">Global Reach</h3>
+			            		<p class = "pillar-desc">
+			              			From Nairobi to international markets — we handle logistics, compliance
+			              			and delivery end to end.
+			            		</p>
+			          		</div>
+			        	</div>
+
+			      	</div>
+			      	<!--pillars end-->
+
+			    </div>
+			    <!--commitment-layout end-->
+
+			    <!--bottom tri-colour stripe-->
+			    <div class = "section-stripe" aria-hidden = "true">
+			      	<span class = "ss-g"></span>
+			      	<span class = "ss-r"></span>
+			      	<span class = "ss-b"></span>
+			    </div>
+
+		  	</div>
+		</section>
+		<!--commitment section ends-->
 
 		<!--featured products-->
-			<section class = "featured" id = "featured">
-				<div class = "container">
-					<h1 class = "section-title"> Featured Products </h1>
+		<section class = "featured" id = "featured">
+		  	<div class = "container">
 
-					<div class = "product-container">
-						<div class = "product-box">
-							<img src = "https://i.ibb.co/spcH2D9k/pineapple.png" />
+			    <!--section header-->
+			    <div class = "section-header">
+			      	<div class = "section-label"> What we export </div>
+			      	<h2 class = "section-title"> Featured <em> Products </em> </h2>
+			      	<p class = "section-sub"> A selection of our finest farm-fresh produce, ready for global export. </p>
+			    </div>
 
-							<div class = "product-box-info">
-								<p> Pineapple </p>
-							</div>
-						</div>
+			    <!--product grid-->
+			    <div class = "featured-grid">
 
-						<div class = "product-box">
-							<img src = "https://i.ibb.co/Zz5NQPqJ/macadamia.png" />
+			      	<div class = "product-card">
+				        <div class = "product-card-img">
+				          	<img src = "https://i.ibb.co/spcH2D9k/pineapple.png" alt = "Pineapple" />
+				        </div>
+				        <div class = "product-card-body">
+				          	<span class = "product-card-name"> Pineapple </span>
+				          	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				        </div>
+			      	</div>
 
-							<div class = "product-box-info">
-								<p> Macadamia </p>
-							</div>
-						</div>
+			      	<div class = "product-card">
+				        <div class = "product-card-img">
+				          	<img src = "https://i.ibb.co/Zz5NQPqJ/macadamia.png" alt = "Macadamia" />
+				        </div>
+				        <div class = "product-card-body">
+				          	<span class = "product-card-name"> Macadamia </span>
+				          	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				        </div>
+			      	</div>
 
-						<div class = "product-box">
-							<img src = "https://i.ibb.co/FqhB9JPy/sesame.png" alt="sesame" />
+			      	<div class = "product-card">
+				        <div class = "product-card-img">
+				          	<img src = "https://i.ibb.co/99NkpbPD/herb-2.png" alt = "Avocado" />
+				        </div>
+				        <div class = "product-card-body">
+				          	<span class = "product-card-name"> Avocado </span>
+				          	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				        </div>
+			      	</div>
 
-							<div class = "product-box-info">
-								<p> Sesame Seeds </p>
-							</div>
-						</div>
+			      	<div class = "product-card">
+				        <div class = "product-card-img">
+				          	<img src = "https://i.ibb.co/xqD1LhdB/mango-fruit.png" alt = "Mango Fruit" />
+				        </div>
+				        <div class = "product-card-body">
+				          	<span class = "product-card-name"> Mango Fruit </span>
+				          	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				        </div>
+			      	</div>
 
-						<div class = "product-box">
-							<img src = "https://i.ibb.co/PsP1hCRR/sisal.png" alt="sisal" />
+			      	<div class = "product-card">
+				        <div class = "product-card-img">
+				          	<img src = "https://i.ibb.co/FqhB9JPy/sesame.png" alt = "Sesame Seeds" />
+				        </div>
+				        <div class = "product-card-body">
+				          	<span class = "product-card-name"> Sesame Seeds </span>
+				          	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				        </div>
+			      	</div>
 
-							<div class = "product-box-info">
-								<p> Sisal </p>
-							</div>
-						</div>
+			      	<div class = "product-card">
+				        <div class = "product-card-img">
+				          	<img src = "https://i.ibb.co/fdQK0Yfj/passion-fruit.png" alt = "Passion Fruit" />
+				        </div>
+				        <div class = "product-card-body">
+				          	<span class = "product-card-name"> Passion Fruit </span>
+				          	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				        </div>
+			      	</div>
 
-						<div class = "product-box">
-							<img src = "https://i.ibb.co/Z6V0JMJ7/corn.png" alt="corn" />
+			      	<div class = "product-card">
+				        <div class = "product-card-img">
+				          	<img src = "https://i.ibb.co/NnrDqnp3/broccoli.png" alt = "Broccoli" />
+				        </div>
+				        <div class = "product-card-body">
+				          	<span class = "product-card-name"> Broccoli </span>
+				          	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				        </div>
+			      	</div>
 
-							<div class = "product-box-info">
-								<p> Corn </p>
-							</div>
-						</div>
+			      	<div class = "product-card">
+				        <div class = "product-card-img">
+				          	<img src="https://i.ibb.co/SDbmWtyP/culinary-herbs.png" alt = "Culinary Herbs" />
+				        </div>
+				        <div class = "product-card-body">
+				          	<span class = "product-card-name"> Culinary Herbs </span>
+				          	<span class = "product-card-icon"> <i class = "fas fa-arrow-right"></i> </span>
+				        </div>
+			      	</div>
 
-						<div class = "product-box">
-							<img src = "https://i.ibb.co/Txwrbjgq/beans.png" alt="beans" />
+			    </div>
+			    <!--product grid end-->
 
-							<div class = "product-box-info">
-								<p> Beans </p>
-							</div>
-						</div>
+			    <!--view all CTA-->
+			    <div class = "featured-cta">
+			      	<a class = "btn-primary" href = "products.html">
+			        	View All Products <i class = "fas fa-arrow-right"></i>
+			      	</a>
+			    </div>
 
-						<div class = "product-box">
-							<img src = "https://i.ibb.co/fdQK0Yfj/passion-fruit.png" />
+			    <!--bottom tri-colour stripe-->
+			    <div class = "section-stripe" aria-hidden = "true">
+			      	<span class = "ss-g"></span>
+			      	<span class = "ss-r"></span>
+			      	<span class = "ss-b"></span>
+			    </div>
 
-							<div class = "product-box-info">
-								<p> Passion Fruit </p>
-							</div>
-						</div>
-
-						<div class = "product-box">
-							<img src = "https://i.ibb.co/xqD1LhdB/mango-fruit.png" />
-
-							<div class = "product-box-info">
-								<p> Mango Fruit </p>
-							</div>
-						</div>
-
-						<div class = "product-box">
-							<img src = "https://i.ibb.co/NnrDqnp3/broccoli.png" alt="broccoli" />
-
-							<div class = "product-box-info">
-								<p> Broccoli </p>
-							</div>
-						</div>
-
-						<div class = "product-box">
-							<img src = "images/products/chilli.jpg" />
-
-							<div class = "product-box-info">
-								<p> Chilli </p>
-							</div>
-						</div>
-
-						<div class = "product-box">
-							<img src = "https://i.ibb.co/SDbmWtyP/culinary-herbs.png" />
-
-							<div class = "product-box-info">
-								<p> Culinary Herbs </p>
-							</div>
-						</div>
-
-						<div class = "product-box">
-							<img src = "https://i.ibb.co/99NkpbPD/herb-2.png" />
-
-							<div class = "product-box-info">
-								<p> Avocado </p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+		  	</div>
+		</section>
 		<!--featured products end-->
 
 		<!--certification & industry membership-->
-			<section class = "cert">
-				<div class = "container"> 
-					<h1 class = "section-title"> Certification & Industry Membership </h1>
+		<section class = "cert">
+		  	<div class = "container">
 
-					<div class = "cert-container">
-						<div class = "cert-box">
-							<img src = "images/certs/global-gap.jpg" />
-						</div>
+			    <!--section header-->
+			    <div class = "section-header">
+			      	<div class = "section-label"> Trust &amp; Standards </div>
+			      	<h2 class = "section-title"> Certification &amp; <em> Industry Membership </em> </h2>
+			      	<p class = "section-sub"> Internationally recognised standards that back every shipment we export. </p>
+			    </div>
 
-						<div class = "cert-box">
-							<img src = "images/certs/fresh-produce-association.jpg" />
-						</div>
+			    <!--cert grid-->
+			    <div class = "cert-grid">
 
-						<div class = "cert-box">
-							<img src = "images/certs/bsci.png" />
-						</div>
+			      	<div class = "cert-card">
+				        <div class = "cert-card-img">
+				          	<img src = "images/certs/global-gap.jpg" alt = "GLOBALG.A.P." />
+				        </div>
 
-						<div class = "cert-box">
-							<img src = "images/certs/brc-food.png" />
-						</div>
+				        <div class = "cert-card-name"> GLOBALG.A.P. </div>
+				        <span class = "cert-card-badge">
+				          	<i class = "fas fa-check-circle"></i> Certified
+				        </span>
+			      	</div>
 
-						<div class = "cert-box">
-							<img src = "images/certs/smeta.png" />
-						</div> 
-					</div>
-				</div>
-			</section>
-		<!--certification & industry membership-->
+			      	<div class = "cert-card">
+				        <div class = "cert-card-img">
+				          	<img src = "images/certs/fresh-produce-association.jpg" alt = "Fresh Produce Association" />
+				        </div>
+
+				        <div class = "cert-card-name"> Fresh Produce Association </div>
+				        <span class = "cert-card-badge">
+				          	<i class = "fas fa-check-circle"></i> Member
+				        </span>
+			      	</div>
+
+			      	<div class = "cert-card">
+				        <div class = "cert-card-img">
+				          	<img src = "images/certs/bsci.png" alt = "BSCI" />
+				        </div>
+
+				        <div class = "cert-card-name"> BSCI </div>
+				        <span class = "cert-card-badge">
+				          	<i class = "fas fa-check-circle"></i> Certified
+				        </span>
+			      	</div>
+
+			      	<div class = "cert-card">
+				        <div class = "cert-card-img">
+				          	<img src = "images/certs/brc-food.png" alt = "BRC Food" />
+				        </div>
+
+				        <div class = "cert-card-name"> BRC Food </div>
+				        <span class = "cert-card-badge">
+				          	<i class = "fas fa-check-circle"></i> Certified
+				        </span>
+			      	</div>
+
+			      	<div class = "cert-card">
+				        <div class = "cert-card-img">
+				          	<img src = "images/certs/smeta.png" alt = "SMETA" />
+				        </div>
+
+				        <div class = "cert-card-name"> SMETA </div>
+				        <span class = "cert-card-badge">
+				          	<i class = "fas fa-check-circle"></i> Audited
+				        </span>
+			      	</div>
+
+			    </div>
+			    <!--cert grid end-->
+
+			    <!--bottom tri-colour stripe-->
+			    <div class = "section-stripe" aria-hidden = "true">
+			      	<span class = "ss-g"></span>
+			      	<span class = "ss-r"></span>
+			      	<span class = "ss-b"></span>
+			    </div>
+
+		  	</div>
+		</section>
+		<!--certification & industry membership end-->
 
 		<!--footer-->
-			<section class = "footer-cover" id = "footer">
-				<div class = "container">
-					<div class = "footer-container">
-						<div class = "footer-box">
-							<h1 class = "footer-title"> Contact Us </h1>
+		<section class = "footer-cover" id = "footer">
 
-							<p> <img src = "images/work/email.png" class = "footer-img" /> horticulture@freshproducekenya.com </p>
-							<p> <img src = "images/work/email.png" class = "footer-img" /> avocado@freshproducekenya.com </p>
-							<p> <img src = "images/work/email.png" class = "footer-img" /> exports@freshproducekenya.com </p>
-						</div>
+		  	<!--top tri-colour stripe-->
+		  	<div class = "footer-stripe" aria-hidden = "true">
+		    	<span class = "fs-g"></span>
+		    	<span class = "fs-r"></span>
+		    	<span class = "fs-b"></span>
+		  	</div>
 
-						<div class = "footer-box">
-							<h1 class = "footer-title"> Locate Us </h1>
-							
-							<p> <img src = "images/work/location.png" class = "footer-img" /> Uchumi building </p>
-							<p> <img src = "images/work/location.png" class = "footer-img" /> Off general Kago road </p>
-							<p> <img src = "images/work/location.png" class = "footer-img" /> Thika </p>
-						</div>
+		  	<div class = "container">
 
-						<div class = "footer-box">
-							
-						</div>
-					</div>
+			    <!--brand row-->
+			    <div class = "footer-brand">
+			      	<a class = "footer-logo" href = "index.html" aria-label = "Fresh Produce Exporters KE Home">
+			        	<img src="images/footer-logo.png" alt = "Fresh Produce Exporters KE Logo" />
+			      	</a>
+			      	<p class = "footer-tagline">
+			      		Premium Exports &nbsp;&bull;&nbsp; Farm Fresh &nbsp;&bull;&nbsp; Nairobi, Kenya
+			      	</p>
+			    </div>
 
-					<a href = "#"> <img src = "images/work/go-up.png" class = "go-up" /> </a>
+			    <!--three-column grid-->
+			    <div class = "footer-grid">
 
-					<hr style = "color: black;" />
+			      	<!--contact-->
+			      	<div class = "footer-col">
+				        <span class = "footer-col-title"> Contact Us </span>
 
-					<footer>
-						<p> &copy; Fresh Produce Exporters Kenya LTD <span id = "year"></span> </p>
-					</footer>
+				        <div class = "footer-row">
+				          	<div class = "footer-icon"> <i class = "fas fa-envelope"></i> </div>
+				          	<div class = "footer-row-text">
+				            	<a href = "mailto:horticulture@freshproducekenya.com"> horticulture@freshproducekenya.com </a>
+				          	</div>
+				        </div>
 
-					<script>
-						document.getElementById("year").textContent = new Date().getFullYear();
-					</script>
-				</div>
-			</section>
-		<!--footer ends-->
+				        <div class = "footer-row">
+				          	<div class = "footer-icon"> <i class = "fas fa-envelope"></i> </div>
+				          	<div class = "footer-row-text">
+				            	<a href = "mailto:avocado@freshproducekenya.com"> avocado@freshproducekenya.com </a>
+				          	</div>
+				        </div>
+
+				        <div class = "footer-row">
+				          	<div class = "footer-icon"> <i class = "fas fa-envelope"></i> </div>
+				          	<div class = "footer-row-text">
+				            	<a href = "mailto:exports@freshproducekenya.com"> exports@freshproducekenya.com </a>
+				          	</div>
+				        </div>
+			      	</div>
+			      	<!--contact end-->
+
+			      	<!--locate-->
+			      	<div class = "footer-col">
+				        <span class = "footer-col-title"> Locate Us </span>
+
+				        <div class = "footer-row">
+				          	<div class = "footer-icon"> <i class = "fas fa-map-marker-alt"></i> </div>
+				          	<div class = "footer-row-text">
+				            	<span> Uchumi Building </span>
+				            	<span> Off General Kago Road </span>
+				            	<span> Thika, Kenya </span>
+				          	</div>
+				        </div>
+
+				        <div class = "footer-row">
+				          	<div class = "footer-icon"> <i class = "fas fa-phone-alt"></i> </div>
+				          	<div class = "footer-row-text">
+				            	<a href = "tel:+254700000000"> +254 700 000 000 </a>
+				          	</div>
+				        </div>
+			      	</div>
+			      	<!--locate end-->
+
+			      	<!--quick links-->
+			      	<div class = "footer-col">
+				        <span class = "footer-col-title"> Quick Links </span>
+
+				        <ul class = "footer-links">
+				          	<li> <a href = "index.html"> <i class = "fas fa-chevron-right"></i> Home </a> </li>
+				          	<li> <a href = "products.html"> <i class = "fas fa-chevron-right"></i> Products </a> </li>
+				          	<li> <a href = "about.html"> <i class = "fas fa-chevron-right"></i> About Us </a> </li>
+				          	<li> <a href = "contact.html"> <i class = "fas fa-chevron-right"></i> Contact </a> </li>
+				        </ul>
+
+				        <div class = "footer-social">
+				          	<a class = "social-btn" href = "#" aria-label = "Facebook"> <i class = "fab fa-facebook-f"></i> </a>
+				          	<a class = "social-btn" href = "#" aria-label = "Instagram"> <i class = "fab fa-instagram"></i> </a>
+				        </div>
+			      	</div>
+			      	<!--quick links end-->
+
+			    </div>
+			    <!--footer-grid end-->
+
+			    <!--bottom bar-->
+			    <div class = "footer-bottom">
+			      	<p class = "footer-copy">
+			        	&copy; Fresh Produce Exporters Kenya LTD <span id = "year"></span>. All rights reserved.
+			      	</p>
+
+			      	<p class = "footer-copy">
+			        	Designed with <span class = "footer-heart">&#10084;</span> in Nairobi
+			      	</p>
+			    </div>
+
+		  	</div>
+		</section>
+
+		<!--back to top button-->
+		<a class = "back-to-top" href = "#" aria-label = "Back to top">
+		  	<i class = "fas fa-arrow-up"></i>
+		</a>
+		<!--footer end-->
+
+		<!--javascript-->
+		<script src = "js/script.js"></script>
+		<!--javascript end-->
 	</body>
 </html>
